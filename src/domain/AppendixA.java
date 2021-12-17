@@ -2,7 +2,6 @@ package domain;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.regex.Pattern;
 
 public class AppendixA {
     public static Map<String, String> reservedWords = new HashMap<String, String>(){{
@@ -59,12 +58,4 @@ public class AppendixA {
         put("S20", "%");
         put("S21", ":=");
     }};
-
-    public static Boolean isReservedSymbols(String character) {
-        return reservedSymbols.containsValue(character);
-    }
-
-    public static Boolean isSpace(char character) {
-        return character == '\n' || character == '\t' || character == '\r';
-    }
 }
